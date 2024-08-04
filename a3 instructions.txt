@@ -1,0 +1,18 @@
+1. Collect the country information obtained from Wikipedia in Assignment 2 and save these source files (*.html) 
+in a dedicated folder on your laptop. It is encouraged to gather more countries' information from Wikipedia if needed. DONE
+
+2. Extract the descriptive content within each HTML file and tokenize the sentences into individual words. DONE
+
+Example descriptive content: "Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-largest country by total area, with the world's longest coastline. Its border with the United States is the world's longest international land border. The country is characterized by a wide range of both meteorologic and geological regions. It is a sparsely inhabited country of 40 million people, the vast majority residing south of the 55th parallel in urban areas. Canada's capital is Ottawa and its three largest metropolitan areas are Toronto, Montreal, and Vancouver."
+
+3. Create an inverted index that includes word counts and their positions in the text. You can refer to slides Pages 7-8 in lecture 7 (on April 25th) for guidance on this.
+
+4. Develop a function named country_search(keyword) that, when given a keyword as input, returns the documents containing that keyword.
+
+For instance, the output of country_search('Toronto') should be "canada.html."
+
+5. Implement a function capable of computing the edit distance or Levenshtein Distance between two strings. For example, the edit distance between 'Toronto' and 'Toronta' should be 1. done 
+
+refer to Page 52-53 in lecture 9, and other web resources for references of edit distance and Levenshtein Distance.
+
+6. Create a function for fuzzy searching that returns results based on similarity. For instance, the result of fuzzy_search('Toronta') should be "canada.html."
